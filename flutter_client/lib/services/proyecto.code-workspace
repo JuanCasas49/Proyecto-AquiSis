@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../quarkus-getting-started"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {}
+}
