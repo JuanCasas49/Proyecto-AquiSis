@@ -1,0 +1,18 @@
+PANEL ADMINISTRADOR / MODERACION DE PRECIOS
+
+El proyecto ya incluia la cola de moderacion HU-08. Se conserva su implementacion y
+se hace visible como “Panel administrador” en Perfil para usuarios con rol moderador.
+
+Para habilitar tu cuenta: abre HABILITAR_ADMIN.sql, reemplaza TU_CORREO_ADMIN@ejemplo.com
+por el correo con el que te registraste en la app y ejecuta el SQL en Neon SQL Editor.
+Luego cierra sesion y vuelve a entrar. En Perfil aparecera “Panel administrador”.
+
+El panel existente permite consultar solicitudes pendientes, ver evidencia fotografica,
+aprobar precios o rechazarlos indicando un motivo. No se modifico el flujo de registro
+de precios ni las consultas del catalogo.
+
+NOTA DE SEGURIDAD: el proyecto actual identifica usuarios mediante un ID local y no
+implementa autenticacion con contrasena/token. El control por rol evita operaciones
+accidentales, pero no es una barrera de seguridad suficiente para un servicio publico.
+Antes de abrir administracion a internet, implemente autenticacion real (por ejemplo JWT)
+y no confie en un usuarioId enviado por el cliente como prueba de identidad.
