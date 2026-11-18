@@ -1,5 +1,10 @@
-*
-!target/*-runner
-!target/*-runner.jar
-!target/lib/*
-!target/quarkus-app/*
+
+**
+!pom.xml
+!src/
+!src/**
+!.mvn/
+!.mvn/**
+!mvnw
+!target/
+!target/**
